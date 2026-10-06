@@ -1,0 +1,14 @@
+/Users/david/RiderProjects/ConsoleApp1/Asistent/bin/Debug/net10.0/Asistent
+/Users/david/RiderProjects/ConsoleApp1/Asistent/bin/Debug/net10.0/Asistent.deps.json
+/Users/david/RiderProjects/ConsoleApp1/Asistent/bin/Debug/net10.0/Asistent.runtimeconfig.json
+/Users/david/RiderProjects/ConsoleApp1/Asistent/bin/Debug/net10.0/Asistent.dll
+/Users/david/RiderProjects/ConsoleApp1/Asistent/bin/Debug/net10.0/Asistent.pdb
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.GeneratedMSBuildEditorConfig.editorconfig
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.AssemblyInfoInputs.cache
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.AssemblyInfo.cs
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.csproj.CoreCompileInputs.cache
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.dll
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/refint/Asistent.dll
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.pdb
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.genruntimeconfig.cache
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/ref/Asistent.dll
