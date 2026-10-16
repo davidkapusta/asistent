@@ -12,3 +12,4 @@
 /Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.pdb
 /Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.genruntimeconfig.cache
 /Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/ref/Asistent.dll
+/Users/david/RiderProjects/ConsoleApp1/Asistent/obj/Debug/net10.0/Asistent.sourcelink.json

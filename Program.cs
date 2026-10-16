@@ -27,6 +27,10 @@
     {
         break;
     }
+    else if (prikaz == "array")
+    { 
+        VykonajArray();
+    }
     else
     {
         Console.WriteLine("Zadaj prosim spravny prikaz.");
@@ -140,4 +144,82 @@ double Perimeter(double a, double b)
 double Diagonal(double a, double b)
 {
     return Math.Sqrt(a * a + b * b);
+}
+
+void VykonajArray()
+{
+    int[] pole;
+    while (true)
+    {
+        Console.Write("Allright, enter a numeric array: ");
+        string vstup = Console.ReadLine();
+        bool error = false;
+
+        string[] casti = vstup.Split(' ');
+        pole = new int[casti.Length];
+
+        for (int i = 0; i < casti.Length; i++)
+        {
+            pole[i] = int.Parse(casti[i]);
+            error = false;
+        }
+
+        if (error == false)
+        {
+            break;
+        }
+    }
+    while (true)
+    {
+        Console.WriteLine("What do you want to do?");
+        string arrayPrikaz = Console.ReadLine();
+
+        if (arrayPrikaz == "find")
+        {
+            Console.WriteLine("What number do you want to find?");
+            int hladane = int.Parse(Console.ReadLine());
+
+            int pozicia = -1;
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (pole[i] == hladane)
+                {
+                    pozicia = i + 1;
+                    break;
+                }
+            }
+
+            if (pozicia != -1)
+            {
+                Console.WriteLine($"Value {hladane} is in the array, on position {pozicia}.");
+            }
+            else
+            {
+                Console.WriteLine($"Value {hladane} is not in the array.");
+            }
+        }
+        else if (arrayPrikaz == "min")
+        {
+            Console.WriteLine(pole.Min());
+        }
+        else if (arrayPrikaz == "sort")
+        {
+            Array.Sort(pole);
+
+            Console.Write("I sorted the array for you. Now looks like this: ");
+            for (int i = 0; i < pole.Length; i++)
+            {
+                Console.Write(pole[i] + " ");
+            }
+            Console.WriteLine();
+        }
+        else if (arrayPrikaz == "exit")
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Zadaj prosim spravny prikaz pre pole.");
+        }
+    }
 }
