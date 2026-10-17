@@ -148,26 +148,16 @@ double Diagonal(double a, double b)
 
 void VykonajArray()
 {
-    int[] pole;
-    while (true)
+    Console.Write("Allright, enter a numeric array: ");
+    string vstup = Console.ReadLine();
+
+    string[] casti = vstup.Split(' ');
+    int[] pole = new int[casti.Length];
+
+    for (int i = 0; i < casti.Length; i++)
     {
-        Console.Write("Allright, enter a numeric array: ");
-        string vstup = Console.ReadLine();
-        bool error = false;
-
-        string[] casti = vstup.Split(' ');
-        pole = new int[casti.Length];
-
-        for (int i = 0; i < casti.Length; i++)
-        {
-            pole[i] = int.Parse(casti[i]);
-            error = false;
-        }
-
-        if (error == false)
-        {
-            break;
-        }
+        pole[i] = int.Parse(casti[i]);
+    
     }
     while (true)
     {
@@ -200,7 +190,15 @@ void VykonajArray()
         }
         else if (arrayPrikaz == "min")
         {
-            Console.WriteLine(pole.Min());
+            int min = pole[0];
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (pole[i] < min)
+                {
+                    min = pole[i];
+                }
+            }
+            Console.WriteLine($"Minimum value in array is {min}.");
         }
         else if (arrayPrikaz == "sort")
         {
